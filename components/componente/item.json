@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_componente_items",
+  "info": {
+    "name": "item",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "fecha": {
+      "type": "date"
+    },
+    "descripcion": {
+      "type": "text"
+    }
+  }
+}

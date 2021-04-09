@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "premiums",
+  "info": {
+    "name": "Premium",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "costo": {
+      "type": "string"
+    },
+    "rango": {
+      "type": "string"
+    },
+    "planes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "componente.plan"
+    }
+  }
+}

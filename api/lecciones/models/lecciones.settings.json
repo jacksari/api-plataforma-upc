@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lecciones",
+  "info": {
+    "name": "Lecciones"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "video": {
+      "type": "string"
+    },
+    "seccion": {
+      "model": "secciones",
+      "via": "lecciones"
+    }
+  }
+}

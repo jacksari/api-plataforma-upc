@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comentarios",
+  "info": {
+    "name": "Comentarios",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "comentario": {
+      "type": "string",
+      "required": false
+    },
+    "curso": {
+      "via": "comentarios",
+      "model": "cursos"
+    },
+    "usuario": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

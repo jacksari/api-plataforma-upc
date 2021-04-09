@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_componente_plans",
+  "info": {
+    "name": "plan",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "precio": {
+      "type": "integer"
+    },
+    "moneda": {
+      "type": "string"
+    },
+    "cursos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "componente.componente"
+    },
+    "favorito": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "experiencias": {
+      "type": "component",
+      "repeatable": true,
+      "component": "componente2.componente2",
+      "max": 4
+    },
+    "testimonios": {
+      "type": "component",
+      "repeatable": true,
+      "component": "testimonio.testimonio-item"
+    },
+    "Sliders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "componente.slider"
+    },
+    "nosotros": {
+      "type": "richtext"
+    }
+  }
+}

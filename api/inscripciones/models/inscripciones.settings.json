@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inscripciones",
+  "info": {
+    "name": "Inscripciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "estudiante": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "curso": {
+      "model": "cursos"
+    },
+    "estado": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

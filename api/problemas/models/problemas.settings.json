@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "problemas",
+  "info": {
+    "name": "Problemas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "problema": {
+      "type": "text"
+    },
+    "curso": {
+      "via": "problemas",
+      "model": "cursos"
+    },
+    "usuario": {
+      "plugin": "admin",
+      "model": "user"
+    }
+  }
+}

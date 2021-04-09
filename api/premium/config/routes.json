@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/premium",
+      "handler": "premium.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/premium",
+      "handler": "premium.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/premium",
+      "handler": "premium.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

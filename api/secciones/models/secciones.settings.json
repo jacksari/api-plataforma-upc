@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "secciones",
+  "info": {
+    "name": "Secciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "curso": {
+      "via": "secciones",
+      "model": "cursos"
+    },
+    "lecciones": {
+      "via": "seccion",
+      "collection": "lecciones"
+    }
+  }
+}

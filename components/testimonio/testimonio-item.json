@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_testimonio_testimonio_items",
+  "info": {
+    "name": "testimonioItem",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "usuario": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "fecha": {
+      "type": "date"
+    }
+  }
+}

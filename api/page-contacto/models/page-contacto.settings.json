@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_contactos",
+  "info": {
+    "name": "PageContacto"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "mensaje": {
+      "type": "text"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    }
+  }
+}

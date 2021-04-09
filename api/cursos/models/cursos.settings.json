@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cursos",
+  "info": {
+    "name": "Cursos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "subtitulo": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "profesor": {
+      "model": "profesores"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titulo"
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "categorias": {
+      "collection": "categorias",
+      "via": "curso"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "componente.componente"
+    },
+    "fecha_pub": {
+      "type": "date"
+    },
+    "presentacion": {
+      "type": "string"
+    },
+    "secciones": {
+      "collection": "secciones",
+      "via": "curso"
+    },
+    "documentos": {
+      "type": "string"
+    },
+    "comentarios": {
+      "collection": "comentarios",
+      "via": "curso"
+    },
+    "problemas": {
+      "collection": "problemas",
+      "via": "curso"
+    }
+  }
+}

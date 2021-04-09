@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/profesores",
+      "handler": "profesores.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/profesores/count",
+      "handler": "profesores.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/profesores/:id",
+      "handler": "profesores.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/profesores",
+      "handler": "profesores.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/profesores/:id",
+      "handler": "profesores.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/profesores/:id",
+      "handler": "profesores.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

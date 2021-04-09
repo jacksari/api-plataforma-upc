@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_componente_componentes",
+  "info": {
+    "name": "componente",
+    "icon": "bullseye"
+  },
+  "options": {},
+  "attributes": {
+    "valor": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_componente_sliders",
+  "info": {
+    "name": "Slider",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "subitulo": {
+      "type": "string"
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

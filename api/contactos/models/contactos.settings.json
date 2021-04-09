@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contactos",
+  "info": {
+    "name": "Contactos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "mensaje": {
+      "type": "text"
+    },
+    "fecha": {
+      "type": "datetime"
+    }
+  }
+}
